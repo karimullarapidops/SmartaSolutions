@@ -7,8 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { SliderComponent } from './slider/slider.component';
-import { HomeSectionsComponent } from './home-sections/home-sections.component';
 import { ServicesComponent } from './services/services.component';
+import { ShowcaseComponent } from './showcase/showcase.component';
+import { BannerComponent } from './banner/banner.component';
 
 
 @NgModule({
@@ -18,8 +19,9 @@ import { ServicesComponent } from './services/services.component';
     FooterComponent,
     HomeComponent,
     SliderComponent,
-    HomeSectionsComponent,
-    ServicesComponent
+    ServicesComponent,
+    ShowcaseComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule

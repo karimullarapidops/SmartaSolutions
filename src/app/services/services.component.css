@@ -10,6 +10,12 @@ h6 {
 section {
     padding: 100px 0;
   }
+  #services{
+    background-image: url("../../assets/images/bg-service.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+  }
   
   section h2.section-heading {
     font-size: 40px;
