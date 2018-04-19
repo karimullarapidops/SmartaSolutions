@@ -8,7 +8,6 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { SliderComponent } from './slider/slider.component';
 import { HomeSectionsComponent } from './home-sections/home-sections.component';
-import { HomeSections2Component } from './home-sections2/home-sections2.component';
 
 
 @NgModule({
@@ -18,8 +17,7 @@ import { HomeSections2Component } from './home-sections2/home-sections2.componen
     FooterComponent,
     HomeComponent,
     SliderComponent,
-    HomeSectionsComponent,
-    HomeSections2Component
+    HomeSectionsComponent
   ],
   imports: [
     BrowserModule
