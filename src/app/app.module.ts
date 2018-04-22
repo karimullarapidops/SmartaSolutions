@@ -13,6 +13,7 @@ import { SliderComponent } from './slider/slider.component';
 import { ServicesComponent } from './services/services.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { BannerComponent } from './banner/banner.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { BannerComponent } from './banner/banner.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
