@@ -3,3 +3,61 @@ img{
     -moz-box-shadow: -10px 10px 15px 0px rgba(0,0,0,0.75);
     box-shadow: -10px 10px 15px 0px rgba(0,0,0,0.75);
     }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 700;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    h2.section-heading {
+        font-size: 40px;
+      }
+    #oracle{
+        background-image: url("../../assets/images/orcle.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #sap{
+        background-image: url("../../assets/images/sap.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #workday{
+        background-image: url("../../assets/images/workday.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .txt-bg{
+        background-color: white;
+        border-radius: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    @media only screen and (min-width:900px){
+        .pad{
+            padding: 100px;
+        }
+    }
+    @media only screen and (max-width:900px){
+        .pad{
+            padding: 10px;
+        }
+    }
