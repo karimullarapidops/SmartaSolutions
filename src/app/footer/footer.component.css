@@ -13,6 +13,11 @@ section {
   p{
       font-weight: 600;
   }
+  section a{
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 11pt;
+  }
  .col-lg-8 hr {
     max-width: 150px;
     border-width: 3px;
