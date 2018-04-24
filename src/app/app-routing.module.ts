@@ -11,8 +11,11 @@ import { ContactComponent } from './contact/contact.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
-  {path :'', component : HomeComponent},
+  {path :'', redirectTo: '/home', pathMatch: 'full'},
   {path :'home', component : HomeComponent},
+  {path :'home2', component : HomeComponent},
+  {path :'home3', component : HomeComponent},
+  {path :'home4', component : HomeComponent},
   {path : 'oracle', component : OracleComponent},
   {path : 'sap', component : SapComponent},
   {path : 'workday', component : WorkdayComponent},
