@@ -14,6 +14,14 @@ import { ServicesComponent } from './services/services.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { BannerComponent } from './banner/banner.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { AboutContentComponent } from './about-content/about-content.component';
+import { TeamComponent } from './team/team.component';
+import { OracleComponent } from './oracle/oracle.component';
+import { SapComponent } from './sap/sap.component';
+import { WorkdayComponent } from './workday/workday.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 
 @NgModule({
@@ -25,7 +33,15 @@ import { AppRoutingModule } from './/app-routing.module';
     SliderComponent,
     ServicesComponent,
     ShowcaseComponent,
-    BannerComponent
+    BannerComponent,
+    AboutContentComponent,
+    TeamComponent,
+    OracleComponent,
+    SapComponent,
+    WorkdayComponent,
+    AboutComponent,
+    ContactComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
