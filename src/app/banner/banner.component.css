@@ -35,6 +35,7 @@
     background-size: cover;
 }
 .banner-ot{
+    background-color: tomato;
     height: 65vh;
     min-height: 300px;
     background-attachment: fixed;
