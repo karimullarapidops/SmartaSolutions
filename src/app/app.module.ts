@@ -22,6 +22,7 @@ import { WorkdayComponent } from './workday/workday.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     WorkdayComponent,
     AboutComponent,
     ContactComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
