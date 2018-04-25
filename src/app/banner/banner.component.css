@@ -26,6 +26,7 @@
 
 }
 .banner{
+    background-color: tomato;
     height: 100vh;
     min-height: 300px;
     background-attachment: fixed;
