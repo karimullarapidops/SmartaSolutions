@@ -1,23 +1,12 @@
 #home1{
     background-image: url('../../assets/images/banner-1.jpg');
-    padding-top: 23%;
-    color: #2BD473;
-    font-family: 'Magettas DEMO';
-}
-.size
-{
-    font-size: 50px;
-    margin-left: 30PX;
-    margin-right: 30px;
-}
-#home1 h1{
-    margin-left: 3%;
+   
 }
 #home2{
-
+    background-image: url('../../assets/images/banner-2.png');
 }
 #home3{
-
+    background-image: url('../../assets/images/banner-3.png');
 }
 #home4{
 
