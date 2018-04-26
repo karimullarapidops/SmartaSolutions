@@ -11,13 +11,17 @@
 
 }
 #oracle{
-
+    background-color: black;
+    background-image: url('../../assets/images/oracle-bg.jpg');
 }
 #sap{
-
+    background-color: black;
+    background-image: url('../../assets/images/sap-bg.jpg');
+    padding-top: 100px;
 }
 #workday{
-
+    background-color: rgb(1, 137, 190);
+    background-image: url('../../assets/images/workday-bg.jpg');
 }
 #about{
 
@@ -37,6 +41,7 @@
 }
 .banner-ot{
     background-color: tomato;
+    padding-top: 50px;
     height: 65vh;
     min-height: 300px;
     background-attachment: fixed;
@@ -44,4 +49,12 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+@media only screen and (max-width:700px){
+.banner-ot{
+    padding-top: 150px;
+}
+#sap{
+    padding-top: 200px;
+}
 }
