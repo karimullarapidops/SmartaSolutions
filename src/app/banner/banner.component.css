@@ -5,20 +5,43 @@
 .bg-section
 {
     padding-top: 22%;
-    font-size: 34px;
     color:#45DC93;
     font-weight: 900;
     font-family: Magettas dEMO;
 }
 .bg-section i
 {
-    font-size: 51px;
+    font-size: 65px;
+}
+.f1 
+{
+    font-size: 40px;
+}
+.f2
+{
+    font-size: 40px;
 }
 #home2{
     background-image: url('../../assets/images/banner-2.png');
 }
 #home3{
     background-image: url('../../assets/images/banner-3.png');
+}
+.bg-section3
+{
+    padding-top: 22%;
+    font-size: 34px;
+    color:#E1DF34;
+    font-weight: 900;
+    font-family: Magettas dEMO;
+}
+.bg-section3 i
+{
+    font-size: 65px;
+}
+.txt{
+    padding: 0px;
+    margin: 0px;
 }
 #home4{
 
