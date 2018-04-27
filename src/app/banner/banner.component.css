@@ -1,5 +1,5 @@
 #home1{
-    background-image: url('../../assets/images/banner-1.jpg');
+    background-image: url('../../assets/images/banner-4.jpg');
    
 }
 .bg-section
@@ -47,7 +47,7 @@
     margin: 0px;
 }
 #home4{
-
+background-image: url('../../assets/images/banner-4.jpg');
 }
 #oracle{
     background-color: black;
