@@ -12,4 +12,10 @@ export class ContactFormComponent implements OnInit {
   ngOnInit() {
   }
 
+  industries = [
+    {value: 'example1', viewValue: 'example-1'},
+    {value: 'example2', viewValue: 'example-2'},
+    {value: 'example3', viewValue: 'example-3'}
+  ];
 }
+
