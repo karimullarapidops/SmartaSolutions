@@ -4,7 +4,8 @@
 }
 .bg-section
 {
-    padding-top: 22%;
+    padding-top: 150px;
+    padding-bottom: 100px;
     color:#45DC93;
     font-weight: 900;
     font-family: Magettas dEMO;
@@ -12,10 +13,11 @@
 .bg-section i
 {
     font-size: 65px;
+    padding-top: 50px;
 }
 .f1 
 {
-    font-size: 40px;
+    font-size: 60px;
 }
 .f2
 {
@@ -29,7 +31,6 @@
 }
 .bg-section3
 {
-    padding-top: 22%;
     font-size: 34px;
     color:#E1DF34;
     font-weight: 900;

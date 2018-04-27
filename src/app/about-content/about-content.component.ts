@@ -11,5 +11,5 @@ export class AboutContentComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  url = window.location.pathname;
 }
