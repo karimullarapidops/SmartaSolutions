@@ -60,10 +60,14 @@
     background-image: url('../../assets/images/workday-bg.jpg');
 }
 #about{
-
+    background-color: black;
+    background-image: url('../../assets/images/contact-about-bg.jpg');
+    padding-top: 150px;
 }
 #contact{
-
+    background-color: black;
+    background-image: url('../../assets/images/contact-about-bg.jpg');
+    padding-top: 150px;
 }
 .banner{
     background-color: tomato;
