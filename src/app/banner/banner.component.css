@@ -6,18 +6,20 @@
 {
     padding-top: 150px;
     padding-bottom: 100px;
-    color:#45DC93;
+    color:rgb(221, 233, 60);
     font-weight: 900;
     font-family: Magettas dEMO;
 }
 .bg-section i
 {
     font-size: 65px;
-    padding-top: 50px;
+    padding-top: 65px;
 }
 .f1 
 {
-    font-size: 60px;
+    font-size: 70px;
+    border: 2px solid rgb(255, 255, 255);    
+    border-radius: 15px;
 }
 .f2
 {
@@ -85,18 +87,26 @@
 }
 
 /*media queries*/
-@media only screen and (max-width: 768px) {
-    .banner
-    {
-        height: auto;
+@media only screen and (max-width: 1024px) {
+    .f1{
+        font-size: 55px;
     }
-  .bg-section
-  {
-      padding-top: 21%;
-      padding-bottom: 27px;
-  }
-  .bg-section i
-  {
-    transform: rotate(90deg);
-  }
+    .bg-section i{
+        font-size: 50px;
+        padding-top: 60px;
+    }
+} 
+@media only screen and (max-width: 768px) {
+    .f1{
+        font-size: 40px;
+    }
+    .bg-section i{
+        font-size: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .bg-section{
+        padding: 30px;
+        padding-top: 100px;
+    }
 } 

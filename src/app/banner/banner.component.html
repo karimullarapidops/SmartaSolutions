@@ -1,27 +1,19 @@
 <div class="banner" id="home1" *ngIf='url=="/home"'>
-   <!-- <div class="container bg">
-       <div class="row">
-           <h1 class="text-center HR">STRONG HR</h1>
-           <i class="fa fa-hand-o-right	"></i>
-           <h1 class="text-center HR">GREAT PEOPLE</h1>
-           <i class="fa fa-hand-o-right	"></i>
-           <h1 class="text-center HR">BETTER RESULTS</h1>
-       </div>
-   </div> -->
    <div class="bg-section container">
         <div class="row text-center">
-            <div class="col-md-3 txt col-12 f1">STRONG HR</div>
+            <div class="col-md txt col-12 f1">STRONG HR</div>
             <div class="col-md-1 col-12">
-                <i class=" txt fa fa-arrow-right"></i>
+                <i class=" txt fa fa-arrow-right" *ngIf='w>768px'></i>
+                <i class=" txt fa fa-arrow-down" *ngIf='w<768px'></i>
             </div>
-            <div class="col-md-3 txt col-12 f1">GREAT PEOPLE</div>
+            <div class="col-md txt col-12 f1">GREAT PEOPLE</div>
             <div class="col-md-1 col-12">
-                <i class="txt fa fa-arrow-right"></i>
+                    <i class=" txt fa fa-arrow-right" *ngIf='w>768px'></i>
+                    <i class=" txt fa fa-arrow-down" *ngIf='w<768px'></i>
             </div>
-            <div class="col-md-3 txt col-12 f1 ">BETTER RESULTS</div>
+            <div class="col-md txt col-12 f1 ">BETTER RESULTS</div>
         </div>
     </div>
-
 </div>
 <div class="banner" id="home2" *ngIf='url=="/home2"'>
   <!-- <div class="bg-section container">
