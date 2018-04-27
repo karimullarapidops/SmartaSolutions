@@ -49,41 +49,33 @@
 #oracle{
     background-color: black;
     background-image: url('../../assets/images/oracle-bg.jpg');
+    padding-top: 80px;
 }
 #sap{
     background-color: black;
     background-image: url('../../assets/images/sap-bg.jpg');
-    padding-top: 100px;
+    padding-top: 80px;
 }
 #workday{
     background-color: rgb(1, 137, 190);
     background-image: url('../../assets/images/workday-bg.jpg');
+    padding-top: 80px;
 }
 #about{
     background-color: black;
     background-image: url('../../assets/images/contact-about-bg.jpg');
     padding-top: 150px;
+    padding-bottom: 100px;
 }
 #contact{
     background-color: black;
     background-image: url('../../assets/images/contact-about-bg.jpg');
     padding-top: 150px;
+    padding-bottom: 100px;
 }
 .banner{
     background-color: tomato;
-    height: 50vh;
-    min-height: 300px;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-.banner-ot{
-    background-color: tomato;
-    padding-top: 50px;
-    height: 65vh;
-    min-height: 300px;
+    height: auto;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
