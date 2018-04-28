@@ -32,6 +32,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { OracleContentComponent } from './oracle-content/oracle-content.component';
 import { SampleComponent } from './sample/sample.component';
 import { SapContentComponent } from './sap-content/sap-content.component';
+import { WorkdayContentComponent } from './workday-content/workday-content.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { SapContentComponent } from './sap-content/sap-content.component';
     PagenotfoundComponent,
     OracleContentComponent,
     SampleComponent,
-    SapContentComponent
+    SapContentComponent,
+    WorkdayContentComponent
   ],
   imports: [
     BrowserModule,
