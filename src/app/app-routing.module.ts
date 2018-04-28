@@ -8,6 +8,7 @@ import { SapComponent } from './sap/sap.component';
 import { WorkdayComponent } from './workday/workday.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { SampleComponent } from './sample/sample.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path : 'workday', component : WorkdayComponent},
   {path : 'about', component : AboutComponent},
   {path : 'contact', component : ContactComponent},
+  {path : 'sample', component : SampleComponent},
   {path : '**', component : PagenotfoundComponent}
 
 ];

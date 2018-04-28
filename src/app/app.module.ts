@@ -7,6 +7,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCardModule} from '@angular/material/card';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 import { AppComponent } from './app.component';
@@ -28,6 +30,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { OracleContentComponent } from './oracle-content/oracle-content.component';
+import { SampleComponent } from './sample/sample.component';
 
 
 @NgModule({
@@ -49,7 +52,8 @@ import { OracleContentComponent } from './oracle-content/oracle-content.componen
     ContactComponent,
     ContactFormComponent,
     PagenotfoundComponent,
-    OracleContentComponent
+    OracleContentComponent,
+    SampleComponent
   ],
   imports: [
     BrowserModule,
@@ -59,6 +63,8 @@ import { OracleContentComponent } from './oracle-content/oracle-content.componen
     MatSelectModule,
     MatCardModule,
     MatCheckboxModule,
+    MatTabsModule,
+    MatExpansionModule,
     AppRoutingModule
   ],
   providers: [],
