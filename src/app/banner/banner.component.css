@@ -50,12 +50,12 @@
 background-image: url('../../assets/images/banner-4.jpg');
 }
 #oracle{
-    background-color: black;
+    background-color: rgb(15, 18, 202);
     background-image: url('../../assets/images/oracle-bg.jpg');
     padding-top: 80px;
 }
 #sap{
-    background-color: black;
+    background-color: rgb(72, 156, 235);
     background-image: url('../../assets/images/sap-bg.jpg');
     padding-top: 80px;
 }
