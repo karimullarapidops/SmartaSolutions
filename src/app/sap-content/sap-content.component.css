@@ -1,0 +1,19 @@
+.container{
+    padding: 120px;
+}
+h1{
+    font-size: 2.5rem;
+}
+p{
+    font-size: 1.5rem;
+}
+.title{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px;
+}
+@media only screen and (max-width:768px){
+    .container{
+        padding:10px;
+    }
+}

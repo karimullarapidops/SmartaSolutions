@@ -31,6 +31,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { OracleContentComponent } from './oracle-content/oracle-content.component';
 import { SampleComponent } from './sample/sample.component';
+import { SapContentComponent } from './sap-content/sap-content.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { SampleComponent } from './sample/sample.component';
     ContactFormComponent,
     PagenotfoundComponent,
     OracleContentComponent,
-    SampleComponent
+    SampleComponent,
+    SapContentComponent
   ],
   imports: [
     BrowserModule,
