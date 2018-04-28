@@ -93,7 +93,7 @@ background-image: url('../../assets/images/banner-4.jpg');
     }
     .bg-section i{
         font-size: 50px;
-        padding-top: 60px;
+        padding-top: 40px;
     }
 } 
 @media only screen and (max-width: 768px) {

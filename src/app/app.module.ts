@@ -27,6 +27,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { OracleContentComponent } from './oracle-content/oracle-content.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     AboutComponent,
     ContactComponent,
     ContactFormComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    OracleContentComponent
   ],
   imports: [
     BrowserModule,
