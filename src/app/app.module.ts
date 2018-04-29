@@ -30,7 +30,6 @@ import { ContactComponent } from './contact/contact.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { OracleContentComponent } from './oracle-content/oracle-content.component';
-import { SampleComponent } from './sample/sample.component';
 import { SapContentComponent } from './sap-content/sap-content.component';
 import { WorkdayContentComponent } from './workday-content/workday-content.component';
 
@@ -55,7 +54,6 @@ import { WorkdayContentComponent } from './workday-content/workday-content.compo
     ContactFormComponent,
     PagenotfoundComponent,
     OracleContentComponent,
-    SampleComponent,
     SapContentComponent,
     WorkdayContentComponent
   ],
