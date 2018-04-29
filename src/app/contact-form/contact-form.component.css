@@ -1,0 +1,47 @@
+.container{
+    padding: 120px;
+}
+h1{
+font-size: 1.5rem;
+color: orangered;
+line-height: 40px;
+}
+h3{
+font-size: 1rem;
+color: black;
+line-height: 35px;
+}
+h2{
+    font-size: 1.1rem;
+    padding: 25px;
+}
+mat-checkbox{
+    padding: 10px;
+}
+p{
+    font-size: 1.5rem;
+}
+mat-card{
+    padding: 20px;
+}
+.example-full-width{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button{
+    margin-left: 50px;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 0 10px 0 10px;
+}
+font{
+    font-weight: 600;
+}
+@media only screen and (max-width:768px){
+    .container{
+        padding:20px;
+    }
+    button{
+        margin: 0 auto;
+    }
+}

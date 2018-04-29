@@ -1,10 +1,112 @@
+#home1{
+    background-image: url('../../assets/images/banner-4.jpg');
+   
+}
+.bg-section
+{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color:rgb(221, 233, 60);
+    font-weight: 900;
+    font-family: Magettas;
+}
+.bg-section i
+{
+    font-size: 65px;
+    padding-top: 65px;
+}
+.f1 
+{
+    font-size: 70px;
+    border: 2px solid rgb(39, 38, 38);    
+    border-radius: 15px;
+}
+.f2
+{
+    font-size: 40px;
+}
+#home2{
+    background-image: url('../../assets/images/banner-2.png');
+}
+#home3{
+    background-image: url('../../assets/images/banner-3.png');
+}
+.bg-section3
+{
+    font-size: 34px;
+    color:#E1DF34;
+    font-weight: 900;
+    font-family: Magettas dEMO;
+}
+.bg-section3 i
+{
+    font-size: 65px;
+}
+.txt{
+    padding: 0px;
+    margin: 0px;
+}
+#home4{
+background-image: url('../../assets/images/banner-4.jpg');
+}
+#oracle{
+    background-color: rgb(15, 18, 202);
+    background-image: url('../../assets/images/oracle-bg.jpg');
+    padding-top: 80px;
+}
+#sap{
+    background-color: rgb(72, 156, 235);
+    background-image: url('../../assets/images/sap-bg.jpg');
+    padding-top: 80px;
+}
+#workday{
+    background-color: rgb(1, 137, 190);
+    background-image: url('../../assets/images/workday-bg.jpg');
+    padding-top: 80px;
+}
+#about{
+    background-color: black;
+    background-image: url('../../assets/images/contact-about-bg.jpg');
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+#contact{
+    background-color: black;
+    background-image: url('../../assets/images/contact-about-bg.jpg');
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
 .banner{
-    background-image: url('../../assets/images/slider1.jpg');
-    height: 100vh;
-    min-height: 300px;
+    background-color: tomato;
+    height: auto;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+
+/*media queries*/
+@media only screen and (max-width: 1024px) {
+    .f1{
+        font-size: 55px;
+    }
+    .bg-section i{
+        font-size: 50px;
+        padding-top: 40px;
+    }
+} 
+@media only screen and (max-width: 768px) {
+    .f1{
+        font-size: 40px;
+    }
+    .bg-section i{
+        font-size: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .bg-section{
+        padding: 30px;
+        padding-top: 100px;
+    }
+} 

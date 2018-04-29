@@ -1,0 +1,85 @@
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-12 heading">
+  <h1>
+      We look forward to speaking with you and answering your questions!
+  </h1>
+  <br>
+  <h3>
+      You may contact us at (+1) 603 275 0067 or
+      fill out the form and one of our representatvies will reach out to you shortly.
+      
+  </h3>
+
+
+
+      </div>
+      <mat-card class="col-md-7 col-12 form">
+        <form action="">
+          <div class="row">
+
+          <mat-form-field class="example-full-width col-md-6 col-12">
+            <input matInput placeholder="First Name">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width col-md-6 col-12">
+              <input matInput placeholder="Last Name">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width col-12">
+                <input matInput placeholder="Company Name">
+              </mat-form-field>
+
+              <mat-form-field class="example-full-width col-12">
+                  <input matInput placeholder="Job Title">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width col-12">
+                    <mat-select placeholder="Select Industry">
+                      <mat-option *ngFor="let x of industries" [value]="x.value">
+                        {{ x.viewValue }}
+                      </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width col-md-4 col-12">
+                  <input matInput placeholder="City">
+                </mat-form-field>
+      
+                <mat-form-field class="example-full-width col-md-4 col-12">
+                   <input matInput placeholder="State/Region">
+                </mat-form-field>
+      
+                <mat-form-field class="example-full-width col-md-4 col-12">
+                  <input matInput placeholder="Country">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width col-12">
+                    <input matInput placeholder="Email">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width col-12">
+                    <input matInput placeholder="Phone Number">
+                </mat-form-field>
+
+                <div class="example-full-width col-12">
+                  <mat-card-content>
+                    <h2>Which service(s) would you like to learn more about?</h2>
+                    <mat-checkbox color="primary" class="col-12">Oracle HCM</mat-checkbox><br>
+                    <mat-checkbox color="primary" class="col-12">SAP SuccessFactors</mat-checkbox><br>
+                    <mat-checkbox color="primary" class="col-12">WorkDay HCM</mat-checkbox><br>
+                    <mat-checkbox color="primary" class="col-12">Other</mat-checkbox>
+                  </mat-card-content>
+                </div>
+
+                <mat-form-field class="example-full-width col-12">
+                    <textarea matInput rows="4" placeholder="When is the best time for us to reach you?"></textarea>
+                </mat-form-field>
+
+                <button class="example-full-width" color="primary" mat-raised-button>Submit</button>
+
+          </div>
+        </form>
+      </mat-card>
+    </div>
+  </div>

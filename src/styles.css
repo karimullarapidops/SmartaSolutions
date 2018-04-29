@@ -1,3 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #5a5a5a; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #333333;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #111110;
+}
+@font-face {
+    font-family: magettas;
+    src: url(assets/fonts/magettas-demo/MagettasDEMO-Bold.woff);
+ }

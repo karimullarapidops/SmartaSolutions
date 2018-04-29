@@ -13,5 +13,7 @@ export class BannerComponent implements OnInit {
   }
 
   url = window.location.pathname;
+  w = window.innerWidth;
+
 
 }

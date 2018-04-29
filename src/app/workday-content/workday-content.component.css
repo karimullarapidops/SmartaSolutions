@@ -1,0 +1,27 @@
+.container{
+    padding: 120px;
+}
+h1{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.2rem;
+}
+.a-txt{
+    font-size: 1rem;
+}
+.title{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.txt{
+    font-size: 1.2rem;
+}
+.header{
+    padding: 20px;
+}
+@media only screen and (max-width:768px){
+    .container{
+        padding:10px;
+    }
+}

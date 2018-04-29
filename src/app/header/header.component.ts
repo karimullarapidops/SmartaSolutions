@@ -10,7 +10,10 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
+
+  url = window.location.pathname;
 
   menus = [
     {"id":"01", "menuitem":"Oracle", "link":"oracle"},
@@ -19,6 +22,6 @@ export class HeaderComponent implements OnInit {
     {"id":"04", "menuitem":"About", "link":"about"},
     {"id":"05", "menuitem":"Register", "link":"register"},
     {"id":"06", "menuitem":"Contact", "link":"contact"}
-  ]
+  ];
 
 }
