@@ -1,4 +1,13 @@
 /* NAVIGATION */
+ul li a
+{
+  color:#E19834;
+}
+ul li a:hover,
+ul li a:focus
+{
+  color:#E19834;
+}
 ul li a,
   ul li a:after,
 ul li a:before {
@@ -19,7 +28,7 @@ ul li a:before {
     width: 0%;
     content: '.';
     color: transparent;
-    background: #aaa;
+    background: #E19834;
     height: 1px;
   }
   ul.stroke li a:hover:after {
@@ -39,11 +48,11 @@ ul li a:before {
     opacity: 0;
   }
   ul.fill li a:hover {
-    color: #fff;
+    color: #E19834;
     z-index: 1;
   }
   ul.fill li a:focus {
-    color: #fff;
+    color: #E19834;
     z-index: 1;
   }
   ul.fill li a:hover:after {
