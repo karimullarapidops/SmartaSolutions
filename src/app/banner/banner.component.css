@@ -17,7 +17,7 @@
 }
 .f1 
 {
-    font-size: 40px;
+    font-size: 60px;
     border: 2px solid rgb(39, 38, 38);    
     border-radius: 15px;
 }
@@ -44,7 +44,7 @@
     margin: 0px;
 }
 #home4{
-background-image: url('../../assets/images/banner-4.jpg');
+background-image: url('../../assets/images/banner-1.jpg');
 }
 #oracle{
     background-color: rgb(15, 18, 202);
