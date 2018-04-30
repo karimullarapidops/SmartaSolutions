@@ -113,3 +113,8 @@ ul li a:before {
       border-radius: 0;
     }
   }
+  
+  .navbar-dark
+  {
+    background: rgba(24, 24, 24,0.2)!important;
+  }
