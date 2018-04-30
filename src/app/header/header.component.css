@@ -13,10 +13,7 @@ ul li a,
   ul li a:after,
 ul li a:before {
     transition: all .5s;
-  }
-  
-  
-  
+  }  
   /* stroke */
  ul.stroke li a,
   nav.fill ul li a {
