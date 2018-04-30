@@ -6,28 +6,25 @@
 {
     padding-top: 150px;
     padding-bottom: 100px;
-    color:rgb(221, 233, 60);
+    color:#36D379;
     font-weight: 900;
     font-family: Magettas;
 }
 .bg-section i
 {
     font-size: 65px;
-    padding-top: 65px;
+    padding-top: 30px;
 }
 .f1 
 {
-    font-size: 70px;
+    font-size: 40px;
     border: 2px solid rgb(39, 38, 38);    
     border-radius: 15px;
 }
-.f2
-{
-    font-size: 40px;
-}
+
 #home2{
     background-image: url('../../assets/images/banner-2.png');
-}
+} 
 #home3{
     background-image: url('../../assets/images/banner-3.png');
 }

@@ -29,4 +29,3 @@ export class ContactFormComponent implements OnInit {
     Validators.minLength(10)
   ]);
 }
-

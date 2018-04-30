@@ -1,0 +1,11 @@
+.nav li a:hover
+{
+    border-bottom:1px solid transparent;
+    
+}
+.nav li a:focus
+{
+    border-bottom:1px solid #D3A536;
+}
+
+
