@@ -19,47 +19,77 @@
           <div class="row">
 
           <mat-form-field class="example-full-width col-md-6 col-12">
-            <input matInput placeholder="First Name">
+            <input matInput ngModel name="firstname" placeholder="First Name" required>
+            <mat-error>
+              This field is required
+            </mat-error>
           </mat-form-field>
 
           <mat-form-field class="example-full-width col-md-6 col-12">
-              <input matInput placeholder="Last Name">
+              <input matInput ngModel name="lastname" placeholder="Last Name" required>
+              <mat-error>
+                This field is required
+              </mat-error>
             </mat-form-field>
 
             <mat-form-field class="example-full-width col-12">
-                <input matInput placeholder="Company Name">
+                <input matInput ngModel name="company" placeholder="Company Name" required>
+                <mat-error>
+                  This field is required
+                </mat-error>
               </mat-form-field>
 
               <mat-form-field class="example-full-width col-12">
-                  <input matInput placeholder="Job Title">
+                  <input ngModel name="jobtitle" matInput placeholder="Job Title" required>
+                  <mat-error>
+                    This field is required
+                  </mat-error>
                 </mat-form-field>
 
                 <mat-form-field class="example-full-width col-12">
-                    <mat-select placeholder="Select Industry">
+                    <mat-select ngModel name="industry" placeholder="Select Industry" required>
                       <mat-option *ngFor="let x of industries" [value]="x.value">
                         {{ x.viewValue }}
                       </mat-option>
                     </mat-select>
+                    <mat-error>
+                      This field is required
+                    </mat-error>
                 </mat-form-field>
 
                 <mat-form-field class="example-full-width col-md-4 col-12">
-                  <input matInput placeholder="City">
+                  <input matInput ngModel name="city" placeholder="City" required>
+                  <mat-error>
+                    This field is required
+                  </mat-error>
                 </mat-form-field>
       
                 <mat-form-field class="example-full-width col-md-4 col-12">
-                   <input matInput placeholder="State/Region">
+                   <input matInput ngModel name="state" placeholder="State/Region" required>
+                   <mat-error>
+                    This field is required
+                  </mat-error>
                 </mat-form-field>
       
                 <mat-form-field class="example-full-width col-md-4 col-12">
-                  <input matInput placeholder="Country">
+                  <input matInput ngModel name="country" placeholder="Country" required>
+                  <mat-error>
+                    This field is required
+                  </mat-error>
                 </mat-form-field>
 
                 <mat-form-field class="example-full-width col-12">
-                    <input matInput placeholder="Email">
+                    <input matInput ngModel name="email" placeholder="Email" required>
+                    <mat-error>
+                      This field is required
+                    </mat-error>
                 </mat-form-field>
 
                 <mat-form-field class="example-full-width col-12">
-                    <input matInput placeholder="Phone Number">
+                    <input matInput ngModel name="phone" placeholder="Phone Number" required>
+                    <mat-error>
+                      This field is required
+                    </mat-error>
                 </mat-form-field>
 
                 <div class="example-full-width col-12">
@@ -73,8 +103,11 @@
                 </div>
 
                 <mat-form-field class="example-full-width col-12">
-                    <textarea matInput rows="4" placeholder="When is the best time for us to reach you?"></textarea>
-                </mat-form-field>
+                    <textarea matInput ngModel name="time" rows="4" placeholder="When is the best time for us to reach you?" required></textarea>
+                    <mat-error>
+                      This field is required
+                    </mat-error>
+                  </mat-form-field>
 
                 <button class="example-full-width" color="primary" mat-raised-button>Submit</button>
 
