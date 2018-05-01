@@ -1,0 +1,9 @@
+img{
+    margin: 0px;
+    padding: 0px;
+}
+@media only screen and (max-width:700px){
+    img{
+margin-top: 50px;
+    }
+}
