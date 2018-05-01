@@ -34,13 +34,9 @@ ul li a:before {
   ul.stroke li a:hover:after {
     width: 100%;
   }
-  ul.stroke li a:focus:after {
-    width: 100%;
-  }
   ul.fill li a {
     transition: all 2s;
   }
-  
   ul.fill li a:after {
     text-align: left;
     content: '.';
@@ -48,10 +44,6 @@ ul li a:before {
     opacity: 0;
   }
   ul.fill li a:hover {
-    color: #E19834;
-    z-index: 1;
-  }
-  ul.fill li a:focus {
     color: #E19834;
     z-index: 1;
   }
