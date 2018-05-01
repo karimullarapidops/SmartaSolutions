@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { fade } from '../animate';
+import { slide } from '../animate';
 
 @Component({
   selector: 'app-workday',
   templateUrl: './workday.component.html',
   styleUrls: ['./workday.component.css'],
   animations: [
-    fade
+    slide
   ]
 })
 export class WorkdayComponent implements OnInit {
