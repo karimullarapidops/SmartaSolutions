@@ -29,7 +29,7 @@ ul li a:before {
     content: '.';
     color: transparent;
     background: #E19834;
-    height: 1px;
+    height: 3px;
   }
   ul.stroke li a:hover:after {
     width: 100%;
@@ -116,5 +116,5 @@ ul li a:before {
   
   .navbar-dark
   {
-    background: rgba(24, 24, 24,0.2)!important;
+    background: rgba(24, 24, 24,0.8)!important;
   }
