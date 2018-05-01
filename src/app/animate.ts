@@ -14,7 +14,7 @@ export let zoomInAnimation = animation([
 
 export let dropInAnimation = animation([
     style({transform:'translateY(-500px)'}),
-    animate('0.6s cubic-bezier(.64,-0.42,.52,1.36)')
+    animate('0.6s cubic-bezier(.55,.32,.53,1.01)')
 ]);
 
 // re-usable animation ends
