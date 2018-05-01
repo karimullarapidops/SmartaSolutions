@@ -4,7 +4,7 @@ export let slide = trigger('slide',[
 
 transition(':enter',[
     style({transform:'translateY(-500px)'}),
-    animate(600)
+    animate('0.6s cubic-bezier(.64,-0.42,.52,1.36)')
 ])
 ]);
 
@@ -13,7 +13,7 @@ export let slideh = trigger('slideh',[
     transition(':enter',[
         query(':enter',[
         style({transform:'translateY(-500px)'}),
-        animate(600)
+        animate('0.6s cubic-bezier(.64,-0.42,.52,1.36)')
         ]),
         query('@fades',animateChild()),
         query('@fadeap',animateChild()),
