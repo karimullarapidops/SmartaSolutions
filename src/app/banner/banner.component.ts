@@ -1,4 +1,4 @@
-import { fades, fadeap, fadeg, fadeas, fadeb } from './../animate';
+import { fades, fadeap, fadeg, fadeas, fadeb, zoomin } from './../animate';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
     fadeap,
     fadeg,
     fadeas,
-    fadeb
+    fadeb,
+    zoomin
   ]
 })
 export class BannerComponent implements OnInit {

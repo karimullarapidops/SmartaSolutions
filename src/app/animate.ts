@@ -3,15 +3,18 @@ import { trigger, state, style, transition, animate, query, animateChild } from 
 export let slide = trigger('slide',[
 
 transition(':enter',[
+    query('#extras',[
     style({transform:'translateY(-500px)'}),
     animate('0.6s cubic-bezier(.64,-0.42,.52,1.36)')
+    ]),
+    query('@zoomin',animateChild())
 ])
 ]);
 
 export let slideh = trigger('slideh',[
 
     transition(':enter',[
-        query(':enter',[
+        query('#home',[
         style({transform:'translateY(-500px)'}),
         animate('0.6s cubic-bezier(.64,-0.42,.52,1.36)')
         ]),
@@ -51,6 +54,12 @@ export let fadeas = trigger('fadeas',[
 export let fadeb = trigger('fadeb',[
     transition(':enter',[
         style({opacity:0, transform:'translateX(-100%)'}),
+        animate(500)
+    ])
+])
+export let zoomin = trigger('zoomin',[
+    transition(':enter',[
+        style({opacity:0, transform:'scale(3,3)'}),
         animate(500)
     ])
 ])
