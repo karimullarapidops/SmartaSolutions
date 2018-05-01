@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
@@ -16,7 +17,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { SliderComponent } from './slider/slider.component';
-import { ServicesComponent } from './services/services.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { BannerComponent } from './banner/banner.component';
 import { AppRoutingModule } from './/app-routing.module';
@@ -41,7 +41,6 @@ import { WorkdayContentComponent } from './workday-content/workday-content.compo
     FooterComponent,
     HomeComponent,
     SliderComponent,
-    ServicesComponent,
     ShowcaseComponent,
     BannerComponent,
     AboutContentComponent,
@@ -60,6 +59,8 @@ import { WorkdayContentComponent } from './workday-content/workday-content.compo
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatButtonModule,
     MatInputModule,
     MatSelectModule,

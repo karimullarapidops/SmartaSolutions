@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { fade } from '../animate';
+import { slide } from '../animate';
 
 @Component({
   selector: 'app-sap',
   templateUrl: './sap.component.html',
   styleUrls: ['./sap.component.css'],
   animations: [
-    fade
+    slide
   ]
 })
 export class SapComponent implements OnInit {

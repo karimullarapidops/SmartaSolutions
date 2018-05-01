@@ -1,12 +1,12 @@
+import { slideh } from './../animate';
 import { Component, OnInit } from '@angular/core';
-import { fade } from '../animate';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   animations: [
-    fade
+    slideh
   ]
 })
 export class HomeComponent implements OnInit {

@@ -1,12 +1,29 @@
 <div class="banner" id="home1" *ngIf='url=="/home"'>
    <div class="bg-section container">
         <div class="row text-center">
-            <div class="col-md txt col-12 f1">STRONG HR</div>
+            <div class="col-md txt col-12 f1" @fades>STRONG <br> HR</div>
+            <div class="col-md-1 col-12" @fadeap>
+                <i class=" txt fa fa-arrow-right" *ngIf='w>768px'></i>
+                <i class=" txt fa fa-arrow-down" *ngIf='w<768px'></i>
+            </div>
+            <div class="col-md txt col-12 f1" @fadeg>GREAT <br>PEOPLE</div>
+            <div class="col-md-1 col-12" @fadeas>
+                    <i class=" txt fa fa-arrow-right" *ngIf='w>768px'></i>
+                    <i class=" txt fa fa-arrow-down" *ngIf='w<768px'></i>
+            </div>
+            <div class="col-md txt col-12 f1 " @fadeb>BETTER RESULTS</div>
+        </div>
+    </div>
+</div>
+<div class="banner" id="home2" *ngIf='url=="/home2"'>
+    <div class="bg-section container">
+        <div class="row text-center">
+            <div class="col-md txt col-12 f1">STRONG <br> HR</div>
             <div class="col-md-1 col-12">
                 <i class=" txt fa fa-arrow-right" *ngIf='w>768px'></i>
                 <i class=" txt fa fa-arrow-down" *ngIf='w<768px'></i>
             </div>
-            <div class="col-md txt col-12 f1">GREAT PEOPLE</div>
+            <div class="col-md txt col-12 f1">GREAT <br>PEOPLE</div>
             <div class="col-md-1 col-12">
                     <i class=" txt fa fa-arrow-right" *ngIf='w>768px'></i>
                     <i class=" txt fa fa-arrow-down" *ngIf='w<768px'></i>
@@ -15,75 +32,62 @@
         </div>
     </div>
 </div>
-<div class="banner" id="home2" *ngIf='url=="/home2"'>
-  <!-- <div class="bg-section container">
-            <div class="row text-center">
-                <div class="col-md-3 txt col-12">STRONG HR</div>
-                <div class="col-md-1 col-12">
-                    <i class="fa fa-arrow-right"></i>
-                </div>
-                <div class="col-md-3 txt col-12">GREAT PEOPLE</div>
-                <div class="col-md-1 col-12">
-                    <i class="fa fa-arrow-right"></i>
-                </div>
-                <div class="col-md-4 col-12">BETTER RESULTS</div>
-            </div>
-    </div>--> 
-</div>
 <div class="banner" id="home3" *ngIf='url=="/home3"'>
-    <div class="bg-section3  container">
-            <div class="row text-center">
-                <div class="col-md-3 txt col-12 f1">STRONG HR</div>
-                <div class="col-md-1 col-12">
-                    <i class="fa fa-arrow-right"></i>
-                </div>
-                <div class="col-md-3 txt col-12 f2">GREAT PEOPLE</div>
-                <div class="col-md-1 col-12">
-                    <i class="fa fa-arrow-right"></i>
-                </div>
-                <div class="col-md-4 col-12 f1">BETTER RESULTS</div>
+    <div class="bg-section container">
+        <div class="row text-center">
+            <div class="col-md txt col-12 f1">STRONG <br> HR</div>
+            <div class="col-md-1 col-12">
+                <i class=" txt fa fa-arrow-right" *ngIf='w>768px'></i>
+                <i class=" txt fa fa-arrow-down" *ngIf='w<768px'></i>
             </div>
+            <div class="col-md txt col-12 f1">GREAT <br>PEOPLE</div>
+            <div class="col-md-1 col-12">
+                    <i class=" txt fa fa-arrow-right" *ngIf='w>768px'></i>
+                    <i class=" txt fa fa-arrow-down" *ngIf='w<768px'></i>
+            </div>
+            <div class="col-md txt col-12 f1 ">BETTER RESULTS</div>
+        </div>
     </div>
 </div>
 <div class="banner" id="home4" *ngIf='url=="/home4"'>
     <div class="bg-section container">
-            <div class="row text-center">
-                <div class="col-md txt col-12 f1">STRONG HR</div>
-                <div class="col-md-1 col-12">
+        <div class="row text-center">
+            <div class="col-md txt col-12 f1">STRONG <br> HR</div>
+            <div class="col-md-1 col-12">
+                <i class=" txt fa fa-arrow-right" *ngIf='w>768px'></i>
+                <i class=" txt fa fa-arrow-down" *ngIf='w<768px'></i>
+            </div>
+            <div class="col-md txt col-12 f1">GREAT <br>PEOPLE</div>
+            <div class="col-md-1 col-12">
                     <i class=" txt fa fa-arrow-right" *ngIf='w>768px'></i>
                     <i class=" txt fa fa-arrow-down" *ngIf='w<768px'></i>
-                </div>
-                <div class="col-md txt col-12 f1">GREAT PEOPLE</div>
-                <div class="col-md-1 col-12">
-                        <i class=" txt fa fa-arrow-right" *ngIf='w>768px'></i>
-                        <i class=" txt fa fa-arrow-down" *ngIf='w<768px'></i>
-                </div>
-                <div class="col-md txt col-12 f1 ">BETTER RESULTS</div>
             </div>
+            <div class="col-md txt col-12 f1 ">BETTER RESULTS</div>
         </div>
+    </div>
 </div>
 <div class="banner" id="oracle" *ngIf='url=="/oracle"'>
     <div class="container text-center">
-        <img src="../../assets/images/oracle-logo.png" class="img-fluid col-12 col-md-9" alt="">
+        <img src="../../assets/images/oracle-logo.png" class="img-fluid col-12 col-md-9" alt="" @zoomin>
     </div>
 </div>
 <div class="banner" id="sap" *ngIf='url=="/sap"'>
     <div class="container text-center">
-        <img src="../../assets/images/sap-logo.png" class="img-fluid col-12 col-md-9" alt="">
+        <img src="../../assets/images/sap-logo.png" class="img-fluid col-12 col-md-9" alt="" @zoomin>
     </div>
 </div>
 <div class="banner" id="workday" *ngIf='url=="/workday"'>
     <div class="container text-center">
-        <img src="../../assets/images/workday-logo.png" class="img-fluid col-12 col-md-9" alt="">
+        <img src="../../assets/images/workday-logo.png" class="img-fluid col-12 col-md-9" alt="" @zoomin>
     </div>
 </div>
 <div class="banner" id="about" *ngIf='url=="/about"'>
     <div class="container text-center">
-            <img src="../../assets/images/about.png" class="img-fluid col-12 col-md-9" alt="">
+            <img src="../../assets/images/about.png" class="img-fluid col-12 col-md-9" alt="" @zoomin>
     </div>
 </div>
 <div class="banner" id="contact" *ngIf='url=="/contact"'>
     <div class="container text-center">
-            <img src="../../assets/images/contact.png" class="img-fluid col-12 col-md-9" alt="">
+            <img src="../../assets/images/contact.png" class="img-fluid col-12 col-md-9" alt="" @zoomin>
     </div>
 </div>

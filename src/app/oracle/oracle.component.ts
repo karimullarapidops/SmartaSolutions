@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { fade } from '../animate';
+import { slide } from '../animate';
 
 @Component({
   selector: 'app-oracle',
   templateUrl: './oracle.component.html',
   styleUrls: ['./oracle.component.css'],
   animations: [
-    fade
+    slide
   ]
 })
 export class OracleComponent implements OnInit {

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, Validators} from '@angular/forms';
+
 
 @Component({
   selector: 'app-contact-form',
@@ -17,5 +19,13 @@ export class ContactFormComponent implements OnInit {
     {value: 'example2', viewValue: 'example-2'},
     {value: 'example3', viewValue: 'example-3'}
   ];
-}
 
+  emailFormControl = new FormControl('', [
+    Validators.required,
+    Validators.email
+  ]);
+  phoneFormControl = new FormControl('', [
+    Validators.required,
+    Validators.minLength(10)
+  ]);
+}
