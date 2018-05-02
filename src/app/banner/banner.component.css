@@ -1,5 +1,5 @@
 #home1{
-    background-image: url('../../assets/images/banner-4.jpg');
+    background-image: url('../../assets/images/banner.jpg');
    
 }
 .bg-section
@@ -23,10 +23,10 @@
 }
 
 #home2{
-    background-image: url('../../assets/images/banner-2.png');
+    background-image: url('../../assets/images/banner.jpg');
 } 
 #home3{
-    background-image: url('../../assets/images/banner-3.png');
+    background-image: url('../../assets/images/banner.jpg');
 }
 .bg-section3
 {
@@ -44,7 +44,7 @@
     margin: 0px;
 }
 #home4{
-background-image: url('../../assets/images/banner-1.jpg');
+background-image: url('../../assets/images/banner.jpg');
 }
 #oracle{
     background-color: rgb(15, 18, 202);
