@@ -1,30 +1,5 @@
+import { dropInAnimation, slideAnimation, zoomInAnimation } from './animations';
 import { trigger, state, style, transition, animate, query, animateChild, animation, useAnimation } from "@angular/animations";
-
-// re-usable animations starts
-
-export let slideAnimation = animation([
-    style({opacity:0, transform:'translateX(-100%)'}),
-    animate(500)
-]);
-
-export let zoomInAnimation = animation([
-    style({opacity:0, transform:'scale(3,3)'}),
-    animate(500)
-]);
-
-export let dropInAnimation = animation([
-    style({transform:'translateY(-500px)'}),
-    animate('0.6s cubic-bezier(.55,.32,.53,1.01)')
-]);
-
-// re-usable animation ends
-
-export let slide = trigger('slide',[
-transition(':enter',[
-    query('#extras',useAnimation(dropInAnimation)),
-    query('@zoomin',animateChild())
-    ])
-]);
 
 export let slideh = trigger('slideh',[
     transition(':enter',[
@@ -46,5 +21,12 @@ export let fadeg = trigger('fadeg',[transition(':enter', useAnimation(slideAnima
 export let fadeas = trigger('fadeas',[transition(':enter', useAnimation(slideAnimation))]);
 
 export let fadeb = trigger('fadeb',[transition(':enter', useAnimation(slideAnimation))]);
+
+export let slide = trigger('slide',[
+    transition(':enter',[
+        query('#extras',useAnimation(dropInAnimation)),
+        query('@zoomin',animateChild())
+        ])
+    ]);
 
 export let zoomin = trigger('zoomin',[transition(':enter', useAnimation(zoomInAnimation))]);
