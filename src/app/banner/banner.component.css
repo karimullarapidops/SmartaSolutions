@@ -23,10 +23,10 @@
 }
 
 #home2{
-    background-image: url('../../assets/images/banner.jpg');
+    background-image: url('../../assets/images/banner-2.png');
 } 
 #home3{
-    background-image: url('../../assets/images/banner.jpg');
+    background-image: url('../../assets/images/banner-3.jpg');
 }
 .bg-section3
 {
@@ -44,7 +44,7 @@
     margin: 0px;
 }
 #home4{
-background-image: url('../../assets/images/banner.jpg');
+background-image: url('../../assets/images/banner-4.png');
 }
 #oracle{
     background-color: rgb(15, 18, 202);
