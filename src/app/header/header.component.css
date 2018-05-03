@@ -1,13 +1,41 @@
 /* NAVIGATION */
-ul li a
+.one ul li a
 {
   color:#fff;
   font-family: magettas;
 }
-ul li a:hover,
+.two ul li a
+{
+  color:#fff;
+}
+.three ul li a
+{
+  color:rgb(0, 0, 0);
+  font-family: magettas;
+}
+.four ul li a
+{
+  color:rgb(0, 0, 0);
+}
+.one ul li a:hover,
 ul li a:focus
 {
-  color:#E19834;
+  color:#0195C8;
+}
+.two ul li a:hover,
+ul li a:focus
+{
+  color:#474E9C;
+}
+.three ul li a:hover,
+ul li a:focus
+{
+  color:#0195c8;
+}
+.four ul li a:hover,
+ul li a:focus
+{
+  color:#474e9c;
 }
 ul li a,
   ul li a:after,
@@ -107,7 +135,20 @@ ul li a:before {
     }
   }
   
-  .navbar-dark
+  .one .navbar-dark
   {
     background: rgba(24, 24, 24,0.8)!important;
+  }
+
+  .two .navbar-dark
+  {
+    background: rgba(24, 24, 24,0.8)!important;
+  }
+  .three .navbar-dark
+  {
+    background: rgb(255, 255, 255,0.8)!important;
+  }
+  .four .navbar-dark
+  {
+    background: rgb(255, 255, 255,1)!important;
   }
