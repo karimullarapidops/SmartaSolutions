@@ -2,15 +2,15 @@
     background-image: url('../../assets/images/banner.jpg');
    
 }
-.bg-section
+#home1 .bg-section
 {
     padding-top: 150px;
     padding-bottom: 100px;
-    color:#36D379;
+    color:#9BE41D;
     font-weight: 900;
     font-family: Magettas;
 }
-.bg-section i
+#home1 .bg-section i
 {
     font-size: 50px;
     padding-top: 52px;
@@ -18,15 +18,47 @@
 .f1 
 {
     font-size: 50px;
-    border: 2px solid rgb(39, 38, 38);    
+    border: 4px solid rgb(39, 38, 38);    
     border-radius: 15px;
 }
 
 #home2{
     background-image: url('../../assets/images/banner-2.png');
 } 
+#home2 .bg-section
+{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color:#9BE41D;
+    font-weight: 900;
+    font-family: Magettas;
+}
+#home2 .bg-section i
+{
+    font-size: 50px;
+    padding-top: 52px;
+}
 #home3{
     background-image: url('../../assets/images/banner-3.jpg');
+}
+.f2
+{
+    font-size: 50px;
+    border: 4px solid rgb(226, 149, 57);    
+    border-radius: 15px;
+}
+#home3 .bg-section
+{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color:#9BE41D;
+    font-weight: 900;
+    font-family: Magettas;
+}
+#home3 .bg-section i
+{
+    font-size: 50px;
+    padding-top: 52px;
 }
 .bg-section3
 {
@@ -43,8 +75,33 @@
     padding: 0px;
     margin: 0px;
 }
+.f3
+{
+    font-size: 50px;
+    border: 4px solid rgb(226, 213, 57 );    
+    border-radius: 15px;
+}
 #home4{
 background-image: url('../../assets/images/banner-4.png');
+}
+#home4 .bg-section
+{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color:#9BE41D;
+    font-weight: 900;
+    font-family: Magettas;
+}
+#home4 .bg-section i
+{
+    font-size: 50px;
+    padding-top: 52px;
+}
+.f4
+{
+    font-size: 50px;
+    border: 4px solid rgb(224, 236, 150 );    
+    border-radius: 15px;
 }
 #oracle{
     background-color: rgb(15, 18, 202);
