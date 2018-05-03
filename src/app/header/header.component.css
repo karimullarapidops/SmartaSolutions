@@ -4,6 +4,7 @@
   color:#fff;
   font-family: magettas;
 }
+
 .two ul li a
 {
   color:#fff;
@@ -17,25 +18,38 @@
 {
   color:rgb(0, 0, 0);
 }
-.one ul li a:hover,
-ul li a:focus
+.one ul li a:hover
 {
   color:#0195C8;
 }
-.two ul li a:hover,
-ul li a:focus
+.one ul li a:focus
 {
-  color:#474E9C;
+  color:#E2F379;
 }
-.three ul li a:hover,
-ul li a:focus
+.two ul li a:hover
 {
-  color:#0195c8;
+  color:#0195C8;
 }
-.four ul li a:hover,
-ul li a:focus
+.two ul li a:focus
 {
-  color:#474e9c;
+  color:#E6BF59;
+}
+
+.three ul li a:hover
+{
+  color:#0195C8;
+}
+.three ul li a:focus
+{
+  color:#E8CC4E;
+}
+.four ul li a:hover
+{
+  color:#0195C8;
+}
+.four ul li a:focus
+{
+  color:#E6597F;
 }
 ul li a,
   ul li a:after,
