@@ -122,13 +122,13 @@ background-image: url('../../assets/images/banner-4.jpg');
 }
 #about{
     background-color: black;
-    background-image: url('../../assets/images/contact-about-bg.jpg');
+    background-image: url('../../assets/images/about-bg.jpg');
     padding-top: 150px;
     padding-bottom: 100px;
 }
 #contact{
     background-color: black;
-    background-image: url('../../assets/images/contact-about-bg.jpg');
+    background-image: url('../../assets/images/contact-bg.jpg');
     padding-top: 150px;
     padding-bottom: 100px;
 }
