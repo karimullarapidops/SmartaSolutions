@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
@@ -32,6 +33,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { OracleContentComponent } from './oracle-content/oracle-content.component';
 import { SapContentComponent } from './sap-content/sap-content.component';
 import { WorkdayContentComponent } from './workday-content/workday-content.component';
+import { PostService } from './services/post.service';
 
 
 @NgModule({
@@ -68,9 +70,12 @@ import { WorkdayContentComponent } from './workday-content/workday-content.compo
     MatCheckboxModule,
     MatTabsModule,
     MatExpansionModule,
+    HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    PostService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

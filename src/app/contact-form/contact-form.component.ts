@@ -1,3 +1,4 @@
+import { PostService } from './../services/post.service';
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
 
@@ -9,9 +10,21 @@ import {FormControl, Validators} from '@angular/forms';
 })
 export class ContactFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: PostService) {
+   }
 
   ngOnInit() {
+  }
+
+  formData={oracle:false,sap:false,workday:false,other:false};
+
+  onSubmit(){
+    console.log(this.formData);
+    this.service.postForm(this.formData)
+    .subscribe(res =>{
+
+    });
+    this.formData={oracle:false,sap:false,workday:false,other:false};
   }
 
   industries = [
