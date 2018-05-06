@@ -15,12 +15,6 @@ export class ContactFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  formData={oracle:false,sap:false,workday:false,other:false};
-
-  onSubmit(){
-    console.log(this.formData);
-  }
-
   industries = [
     {value: 'example1', viewValue: 'example-1'},
     {value: 'example2', viewValue: 'example-2'},
