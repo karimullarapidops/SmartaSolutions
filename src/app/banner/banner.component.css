@@ -13,7 +13,7 @@
 #home1 .bg-section i
 {
     font-size: 70px;
-    padding-top: 52px;
+    padding-top: 44px;
 }
 .f1 
 {
@@ -68,10 +68,12 @@
     .f1{
         font-size: 55px;
     }
-    .bg-section i{
-        font-size: 50px;
-        padding-top: 40px;
-    }
+    #home1 .bg-section i
+        {
+            font-size: 70px;
+            padding-top: 22px;
+          
+        }
 } 
 @media only screen and (max-width: 768px) {
     .f1{
