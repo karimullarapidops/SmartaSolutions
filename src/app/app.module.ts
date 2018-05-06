@@ -33,7 +33,6 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { OracleContentComponent } from './oracle-content/oracle-content.component';
 import { SapContentComponent } from './sap-content/sap-content.component';
 import { WorkdayContentComponent } from './workday-content/workday-content.component';
-import { PostService } from './services/post.service';
 
 
 @NgModule({
@@ -73,9 +72,7 @@ import { PostService } from './services/post.service';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [
-    PostService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
