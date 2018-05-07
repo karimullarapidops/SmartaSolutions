@@ -1,14 +1,14 @@
 /* NAVIGATION */
-.one ul li a
+ ul li a
 {
   color:#fff;
   font-family: magettas;
 }
-.one ul li a:hover
+ ul li a:hover
 {
   color:#0195C8;
 }
-.one ul li a:focus
+ ul li a:focus
 {
   color:#E2F379;
 }
