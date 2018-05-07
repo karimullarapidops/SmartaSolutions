@@ -15,6 +15,26 @@ export class ContactFormComponent implements OnInit {
   ngOnInit() {
   }
 
+formData={
+  firstName:'',
+  lastName:'',
+  companyName:'',
+  jobTitle:'',
+  industry:'',
+  city:'',
+  state:'',
+  country:'',
+  email:'',
+  phoneNumber:'',
+  services:{
+    oracle:false,
+    sap:false,
+    workday:false,
+    other:false
+  },
+  bestTime:''
+};
+
   industries = [
     {value: 'example1', viewValue: 'example-1'},
     {value: 'example2', viewValue: 'example-2'},
@@ -29,4 +49,10 @@ export class ContactFormComponent implements OnInit {
     Validators.required,
     Validators.minLength(10)
   ]);
+
+onSubmit(){
+  console.log(this.formData);
+}
+
+
 }

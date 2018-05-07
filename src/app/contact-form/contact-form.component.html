@@ -15,7 +15,7 @@
           <div class="row">
 
           <mat-form-field class="example-full-width col-md-6 col-12">
-            <input matInput ngModel name="firstName" placeholder="First Name" required>
+            <input matInput ngModel [(ngModel)]='formData.firstName' name="firstName" placeholder="First Name" required>
             <mat-error>
               This field is required
             </mat-error>
@@ -110,7 +110,7 @@
                       This field is required
                     </mat-error>
                   </mat-form-field>
-                <button type="submit" class="example-full-width" color="primary" mat-raised-button>Submit</button>
+                <button type="submit" (click)='onSubmit()' class="example-full-width" color="primary" mat-raised-button>Submit</button>
           </div>
         </form>
       </mat-card>
