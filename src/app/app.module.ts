@@ -70,7 +70,8 @@ import { WorkdayContentComponent } from './workday-content/workday-content.compo
     MatTabsModule,
     MatExpansionModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
