@@ -54,21 +54,21 @@
                 </mat-form-field>
 
                 <mat-form-field class="example-full-width col-md-4 col-12">
-                  <input matInput ngModel [(ngModel)]='formData.city' name="city" placeholder="City" required>
+                  <input matInput ngModel [(ngModel)]='formData.address.city' name="city" placeholder="City" required>
                   <mat-error>
                     This field is required
                   </mat-error>
                 </mat-form-field>
       
                 <mat-form-field class="example-full-width col-md-4 col-12">
-                   <input matInput ngModel [(ngModel)]='formData.state' name="state" placeholder="State/Region" required>
+                   <input matInput ngModel [(ngModel)]='formData.address.state' name="state" placeholder="State/Region" required>
                    <mat-error>
                     This field is required
                   </mat-error>
                 </mat-form-field>
       
                 <mat-form-field class="example-full-width col-md-4 col-12">
-                  <input matInput ngModel [(ngModel)]='formData.country' name="country" placeholder="Country" required>
+                  <input matInput ngModel [(ngModel)]='formData.address.country' name="country" placeholder="Country" required>
                   <mat-error>
                     This field is required
                   </mat-error>

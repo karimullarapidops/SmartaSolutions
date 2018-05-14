@@ -11,9 +11,9 @@ import 'rxjs/add/operator/map'
 export class ContactFormComponent implements OnInit {
 forms:any[];
   constructor(private http: Http) {
-    http.get('http://localhost:3000/forms')
+    http.get('http://localhost:3000/api/contact')
     .subscribe(res => {
-      this.forms = res.json();
+		console.log(res);
     })
    }
 
@@ -41,26 +41,30 @@ forms:any[];
     companyName:'',
     jobTitle:'',
     industry:'',
-    city:'',
-    state:'',
-    country:'',
+	address:{
+		city:'',
+		state:'',
+		country:''
+	},
     email:'',
     phoneNumber:'',
     services:{
-      oracle:false,
-      sap:false,
-      workday:false,
-      other:false
+		oracle:false,
+		sap:false,
+		workday:false,
+		other:false
     },
     bestTime:''
   };
 
 
 onSubmit(){
-  this.http.post('http://localhost:3000/forms',JSON.stringify(this.formData))
-  .subscribe(response =>{
+	let testing = [1,2,3]
+  this.http.post('http://localhost:3000/api/contact', this.formData)
+  .subscribe(res =>{
     // this.formData['id'] = response.json().id;
     // this.forms.push(this.formData);
+	console.log(res.json());
   })
 }
 
