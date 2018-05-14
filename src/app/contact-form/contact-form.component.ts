@@ -10,8 +10,9 @@ import 'rxjs/add/operator/map'
 })
 export class ContactFormComponent implements OnInit {
 forms:any[];
+ url = 'http://sasbackend.herokuapp.com/api/contact';
   constructor(private http: Http) {
-    http.get('http://localhost:3000/api/contact')
+    http.get(this.url)
     .subscribe(res => {
 		console.log(res);
     })
@@ -60,7 +61,7 @@ forms:any[];
 
 onSubmit(){
 	let testing = [1,2,3]
-  this.http.post('http://localhost:3000/api/contact', this.formData)
+  this.http.post(this.url, this.formData)
   .subscribe(res =>{
     // this.formData['id'] = response.json().id;
     // this.forms.push(this.formData);
