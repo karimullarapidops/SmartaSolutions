@@ -10,7 +10,7 @@ import 'rxjs/add/operator/map'
 })
 export class ContactFormComponent implements OnInit {
 forms:any[];
- url = 'http://sasbackend.herokuapp.com/api/contact';
+ url = 'https://sasbackend.herokuapp.com/api/contact';
   constructor(private http: Http) {
     http.get(this.url)
     .subscribe(res => {
