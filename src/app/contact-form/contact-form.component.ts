@@ -14,7 +14,7 @@ forms:any[];
   constructor(private http: Http) {
     http.get(this.url)
     .subscribe(res => {
-		console.log(res._body);
+		console.log(res);
     })
    }
 
