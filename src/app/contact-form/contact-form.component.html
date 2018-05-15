@@ -110,7 +110,7 @@
                       This field is required
                     </mat-error>
                   </mat-form-field>
-                <button type="submit" (click)='onSubmit()' class="example-full-width" color="primary" mat-raised-button>Submit</button>
+                <button type="submit"  [disabled]="loginForm.form.invalid" (click)='onSubmit()' class="example-full-width" color="primary" mat-raised-button>Submit</button>
           </div>
         </form>
       </mat-card>
