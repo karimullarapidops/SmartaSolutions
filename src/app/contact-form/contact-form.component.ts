@@ -13,8 +13,9 @@ forms:any[];
  url = 'https://sasbackend.herokuapp.com/api/contact';
   constructor(private http: Http) {
     http.get(this.url)
-    .subscribe(res => {
-		console.log(res);
+    .subscribe(Response => {
+      let data=Response;
+		console.log(data.status);
     })
    }
 
