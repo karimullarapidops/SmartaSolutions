@@ -11,6 +11,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 import { AppComponent } from './app.component';
@@ -69,6 +71,8 @@ import { WorkdayContentComponent } from './workday-content/workday-content.compo
     MatCheckboxModule,
     MatTabsModule,
     MatExpansionModule,
+    MatProgressSpinnerModule,
+    MatChipsModule,
     HttpModule,
     AppRoutingModule,
     HttpModule

@@ -17,28 +17,28 @@
           <mat-form-field class="example-full-width col-md-6 col-12">
             <input matInput ngModel [(ngModel)]='formData.firstName' name="firstName" placeholder="First Name" required>
             <mat-error>
-              Please enter the First Name
+              Please enter the <strong>First Name</strong>
             </mat-error>
           </mat-form-field>
 
           <mat-form-field class="example-full-width col-md-6 col-12">
               <input matInput ngModel [(ngModel)]='formData.lastName' name="lastName" placeholder="Last Name" required>
               <mat-error>
-                Please enter the Last Name
+                Please enter the <strong>Last Name</strong> 
               </mat-error>
             </mat-form-field>
 
             <mat-form-field class="example-full-width col-12">
                 <input matInput ngModel [(ngModel)]='formData.companyName'  name="company" placeholder="Company Name" required>
                 <mat-error>
-                  Please enter the Company Name
+                  Please enter the <strong>Company Name</strong> 
                 </mat-error>
               </mat-form-field>
 
               <mat-form-field class="example-full-width col-12">
                   <input ngModel [(ngModel)]='formData.jobTitle' name="jobTitle" matInput placeholder="Job Title" required>
                   <mat-error>
-                    Please enter the Job Title
+                    Please enter the <strong>Job Title</strong> 
                   </mat-error>
                 </mat-form-field>
 
@@ -49,28 +49,28 @@
                       </mat-option>
                     </mat-select>
                     <mat-error>
-                      Please select the Industry
+                      Please select the <strong>Industry</strong> 
                     </mat-error>
                 </mat-form-field>
 
                 <mat-form-field class="example-full-width col-md-4 col-12">
                   <input matInput ngModel [(ngModel)]='formData.address.city' name="city" placeholder="City" required>
                   <mat-error>
-                    Please enter the City
+                    Please enter the <strong>City</strong> 
                   </mat-error>
                 </mat-form-field>
       
                 <mat-form-field class="example-full-width col-md-4 col-12">
                    <input matInput ngModel [(ngModel)]='formData.address.state' name="state" placeholder="State/Region" required>
                    <mat-error>
-                    Please enter the State/Region
+                    Please enter the <strong>State/Region</strong> 
                   </mat-error>
                 </mat-form-field>
       
                 <mat-form-field class="example-full-width col-md-4 col-12">
                   <input matInput ngModel [(ngModel)]='formData.address.country' name="country" placeholder="Country" required>
                   <mat-error>
-                    Please enter the Country
+                    Please enter the <strong>Country</strong> 
                   </mat-error>
                 </mat-form-field>
 
@@ -87,7 +87,7 @@
                 <mat-form-field class="example-full-width col-12">
                     <input matInput ngModel [(ngModel)]='formData.phoneNumber' name="phone" placeholder="Phone Number" [formControl]="phoneFormControl" required>
                     <mat-error *ngIf="!phoneFormControl.hasError('required')">
-                      Please enter a valid Phone Number
+                      Please enter a valid <strong>Phone Number</strong> 
                     </mat-error>
                     <mat-error *ngIf="phoneFormControl.hasError('required')">
                         Please enter a valid  <strong>phone number</strong>
@@ -107,11 +107,17 @@
                 <mat-form-field class="example-full-width col-12">
                     <textarea matInput ngModel [(ngModel)]='formData.bestTime' name="time" rows="4" placeholder="When is the best time for us to reach you?" required></textarea>
                     <mat-error>
-                      Please enter the Best Time to contact you.
+                      Please enter the <strong>Best Time to contact you.</strong> 
                     </mat-error>
                   </mat-form-field>
-                <button type="submit"  [disabled]="loginForm.form.invalid" (click)='onSubmit()' class="example-full-width" color="primary" mat-raised-button>Submit</button>
-          </div>
+
+                <button type="submit"  [disabled]="loginForm.form.invalid" (click)='onSubmit()' *ngIf='submit' class="example-full-width" color="primary" mat-raised-button>Submit</button>
+                  <mat-spinner [diameter]="40" *ngIf='spin'></mat-spinner>
+                  <mat-chip-list>
+                    <mat-chip color="primary" selected="true" *ngIf='done'>Submitted Successfully</mat-chip>
+                  </mat-chip-list>
+        
+              </div>
         </form>
 
       </mat-card>

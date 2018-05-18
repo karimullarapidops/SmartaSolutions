@@ -22,6 +22,10 @@ forms:any[];
   ngOnInit() {
   }
 
+  submit:boolean=true;
+  spin:boolean=false;
+  done:boolean=false;
+
   industries = [
     {value: 'example1', viewValue: 'example-1'},
     {value: 'example2', viewValue: 'example-2'},
@@ -61,12 +65,16 @@ forms:any[];
 
 
 onSubmit(){
+  this.spin=true;
+  this.submit=false;
+  this.done=false;
 	let testing = [1,2,3]
   this.http.post(this.url, this.formData)
   .subscribe(res =>{
-    // this.formData['id'] = response.json().id;
-    // this.forms.push(this.formData);
-	console.log(res.json());
+  console.log(res.json());
+  this.done=true;
+  this.submit=false;
+  this.spin=false;
   })
 }
 
