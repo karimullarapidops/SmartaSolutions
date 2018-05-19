@@ -43,6 +43,28 @@ mat-chip-list{
 font{
     font-weight: 600;
 }
+::ng-deep snack-bar-container.snackbar{
+    background: green;
+    border-radius:10px 10px 0 0;
+  }
+  
+  ::ng-deep .snackbar .mat-simple-snackbar {
+    color: white;
+  }
+  ::ng-deep .snackbar .mat-simple-snackbar-action{
+    color:black;
+  }
+  ::ng-deep snack-bar-container.failSnack{
+    background: red;
+    border-radius:10px 10px 0 0;
+  }
+  
+  ::ng-deep .failSnack .mat-simple-snackbar {
+    color: white;
+  }
+  ::ng-deep .failSnack .mat-simple-snackbar-action{
+    color:black;
+  }
 @media only screen and (max-width:768px){
     .container{
         padding:20px;

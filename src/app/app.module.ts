@@ -13,6 +13,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 import { AppComponent } from './app.component';
@@ -73,6 +74,7 @@ import { WorkdayContentComponent } from './workday-content/workday-content.compo
     MatExpansionModule,
     MatProgressSpinnerModule,
     MatChipsModule,
+    MatSnackBarModule,
     HttpModule,
     AppRoutingModule,
     HttpModule

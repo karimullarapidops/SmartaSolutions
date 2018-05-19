@@ -1,4 +1,5 @@
 import { Http } from '@angular/http';
+import {MatSnackBar} from '@angular/material';
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
 import 'rxjs/add/operator/map'
@@ -11,7 +12,7 @@ import 'rxjs/add/operator/map'
 export class ContactFormComponent implements OnInit {
 forms:any[];
  url = 'https://sasbackend.herokuapp.com/api/contact';
-  constructor(private http: Http) {
+  constructor(private http: Http, public snackBar: MatSnackBar) {
     http.get(this.url)
     .subscribe(Response => {
       let data=Response;
@@ -24,7 +25,6 @@ forms:any[];
 
   submit:boolean=true;
   spin:boolean=false;
-  done:boolean=false;
 
   industries = [
     {value: 'example1', viewValue: 'example-1'},
@@ -35,10 +35,6 @@ forms:any[];
   emailFormControl = new FormControl('', [
     Validators.required,
     Validators.email
-  ]);
-  phoneFormControl = new FormControl('', [
-    Validators.required,
-    Validators.minLength(10)
   ]);
 
   formData={
@@ -67,14 +63,19 @@ forms:any[];
 onSubmit(){
   this.spin=true;
   this.submit=false;
-  this.done=false;
-	let testing = [1,2,3]
   this.http.post(this.url, this.formData)
   .subscribe(res =>{
-  console.log(res.json());
-  this.done=true;
-  this.submit=false;
+    if(res.status!=200) return this.openSnack('Something Went Wrong...! Try Again', 'failSnack');
+  this.submit=true;
   this.spin=false;
+  this.openSnack('Form Submitted Successfully...','snackbar');
+  })
+}
+
+openSnack(message:string, pclass:string){
+  this.snackBar.open(message,'X',{
+    duration:2000,
+    panelClass:[pclass]
   })
 }
 

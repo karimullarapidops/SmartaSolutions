@@ -13,7 +13,6 @@
       <mat-card class="col-md-7 col-12 form">
         <form #loginForm="ngForm">
           <div class="row">
-
           <mat-form-field class="example-full-width col-md-6 col-12">
             <input matInput ngModel [(ngModel)]='formData.firstName' name="firstName" placeholder="First Name" required>
             <mat-error>
@@ -75,22 +74,16 @@
                 </mat-form-field>
 
                 <mat-form-field class="example-full-width col-12">
-                    <input matInput ngModel [(ngModel)]='formData.email' name="email" placeholder="Email" [formControl]="emailFormControl" required>
-                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-                      Please enter a valid email address
-                    </mat-error>
-                    <mat-error *ngIf="emailFormControl.hasError('required')">
+                    <input type="email" matInput ngModel [(ngModel)]='formData.email' name="email" placeholder="Email" required>
+                    <mat-error>
                       Please enter a valid  <strong>Email address</strong>
                     </mat-error>
                 </mat-form-field>
 
                 <mat-form-field class="example-full-width col-12">
-                    <input matInput ngModel [(ngModel)]='formData.phoneNumber' name="phone" placeholder="Phone Number" [formControl]="phoneFormControl" required>
-                    <mat-error *ngIf="!phoneFormControl.hasError('required')">
+                    <input matInput ngModel [(ngModel)]='formData.phoneNumber' name="phone" placeholder="Phone Number" required>
+                    <mat-error>
                       Please enter a valid <strong>Phone Number</strong> 
-                    </mat-error>
-                    <mat-error *ngIf="phoneFormControl.hasError('required')">
-                        Please enter a valid  <strong>phone number</strong>
                     </mat-error>
                 </mat-form-field>
 
@@ -111,11 +104,9 @@
                     </mat-error>
                   </mat-form-field>
 
-                <button type="submit"  [disabled]="loginForm.form.invalid" (click)='onSubmit()' *ngIf='submit' class="example-full-width" color="primary" mat-raised-button>Submit</button>
-                  <mat-spinner [diameter]="40" *ngIf='spin'></mat-spinner>
-                  <mat-chip-list>
-                    <mat-chip color="primary" selected="true" *ngIf='done'>Submitted Successfully</mat-chip>
-                  </mat-chip-list>
+                <button type="submit"  [disabled]="loginForm.form.invalid" (click)='onSubmit(); loginForm.reset();' *ngIf='submit' class="example-full-width" color="primary" mat-raised-button>Submit</button>
+                <mat-spinner [diameter]="40" *ngIf='spin'></mat-spinner>
+
         
               </div>
         </form>
