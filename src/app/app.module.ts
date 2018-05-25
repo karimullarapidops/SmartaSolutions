@@ -36,6 +36,10 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { OracleContentComponent } from './oracle-content/oracle-content.component';
 import { SapContentComponent } from './sap-content/sap-content.component';
 import { WorkdayContentComponent } from './workday-content/workday-content.component';
+import { LfjHomeComponent } from './lfj-home/lfj-home.component';
+import { LfjLoginComponent } from './lfj-login/lfj-login.component';
+import { LfjProfileComponent } from './lfj-profile/lfj-profile.component';
+import { LfjSkillsComponent } from './lfj-skills/lfj-skills.component';
 
 
 @NgModule({
@@ -58,7 +62,11 @@ import { WorkdayContentComponent } from './workday-content/workday-content.compo
     PagenotfoundComponent,
     OracleContentComponent,
     SapContentComponent,
-    WorkdayContentComponent
+    WorkdayContentComponent,
+    LfjHomeComponent,
+    LfjLoginComponent,
+    LfjProfileComponent,
+    LfjSkillsComponent
   ],
   imports: [
     BrowserModule,
