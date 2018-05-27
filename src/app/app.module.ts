@@ -14,6 +14,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatIconModule} from '@angular/material/icon';
 
 
 import { AppComponent } from './app.component';
@@ -40,6 +41,9 @@ import { LfjHomeComponent } from './lfj-home/lfj-home.component';
 import { LfjLoginComponent } from './lfj-login/lfj-login.component';
 import { LfjProfileComponent } from './lfj-profile/lfj-profile.component';
 import { LfjSkillsComponent } from './lfj-skills/lfj-skills.component';
+import { LfjSignupComponent } from './lfj-signup/lfj-signup.component';
+import { LfjOverviewComponent } from './lfj-overview/lfj-overview.component';
+import { LfjNavComponent } from './lfj-nav/lfj-nav.component';
 
 
 @NgModule({
@@ -66,7 +70,10 @@ import { LfjSkillsComponent } from './lfj-skills/lfj-skills.component';
     LfjHomeComponent,
     LfjLoginComponent,
     LfjProfileComponent,
-    LfjSkillsComponent
+    LfjSkillsComponent,
+    LfjSignupComponent,
+    LfjOverviewComponent,
+    LfjNavComponent
   ],
   imports: [
     BrowserModule,
@@ -83,6 +90,7 @@ import { LfjSkillsComponent } from './lfj-skills/lfj-skills.component';
     MatProgressSpinnerModule,
     MatChipsModule,
     MatSnackBarModule,
+    MatIconModule,
     HttpModule,
     AppRoutingModule,
     HttpModule

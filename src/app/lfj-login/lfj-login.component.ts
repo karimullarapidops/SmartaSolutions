@@ -12,4 +12,5 @@ export class LfjLoginComponent implements OnInit {
   ngOnInit() {
   }
 
+  url = window.location.pathname;
 }
