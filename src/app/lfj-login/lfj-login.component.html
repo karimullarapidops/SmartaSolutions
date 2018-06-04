@@ -1,0 +1,38 @@
+<div class="container-fluid outer">
+    <div class="container col-lg-4 col-md-8 col-10 inner" @zoomin>
+        <h1 class="text-center text-white">Login</h1>
+
+        <mat-card>
+
+        <form #loginForm="ngForm" autocomplete="off">
+            <div class="row">
+  
+              <mat-form-field class="example-full-width col-12">
+                  <input matInput ngModel  name="email" placeholder="Email" required>
+                  <mat-error>
+                    Please enter the <strong>Email</strong> 
+                  </mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width col-12">
+                    <input type="password" matInput ngModel  name="password" placeholder="Password" required>
+                    <mat-error>
+                      Please enter the <strong>Password</strong> 
+                    </mat-error>
+                  </mat-form-field>
+  
+             
+                  <button type="submit"  [disabled]="loginForm.form.invalid" (click)='onSubmit();' *ngIf='submit' class="example-full-width" color="primary" mat-raised-button>Login</button>
+                  <mat-spinner [diameter]="40" *ngIf='spin'></mat-spinner>
+  
+          
+                </div>
+          </form>
+          <br>
+          <h6 class="text-center">Not a member ? <a routerLink='../signup'> Register</a></h6>
+  
+        </mat-card>
+
+
+    </div>
+</div>

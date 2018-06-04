@@ -1,9 +1,13 @@
+import { zoomin } from './../animate';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-lfj-signup',
   templateUrl: './lfj-signup.component.html',
-  styleUrls: ['./lfj-signup.component.css']
+  styleUrls: ['./lfj-signup.component.css'],
+  animations:[
+    zoomin
+  ]
 })
 export class LfjSignupComponent implements OnInit {
 
@@ -11,5 +15,7 @@ export class LfjSignupComponent implements OnInit {
 
   ngOnInit() {
   }
+  submit=true;
+  spin=false;
 
 }

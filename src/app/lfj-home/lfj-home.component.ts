@@ -12,4 +12,6 @@ export class LfjHomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  url = window.location.pathname;
+
 }

@@ -24,13 +24,13 @@ const routes: Routes = [
   {path : 'workday', component : WorkdayComponent},
   {path : 'about', component : AboutComponent},
   {path : 'contact', component : ContactComponent},
+  {path : 'login', component : LfjLoginComponent},
+  {path : 'signup', component : LfjSignupComponent},
   {path : 'LFJ', component: LfjHomeComponent, 
 children:[
   {path:'overview', component: LfjOverviewComponent},
   {path:'profile', component: LfjProfileComponent},
-  {path:'skills', component: LfjSkillsComponent},
-  {path:'login', component: LfjLoginComponent},
-  {path:'signup', component: LfjSignupComponent}
+  {path:'skills', component: LfjSkillsComponent}
 ]},
   {path : '**', component : PagenotfoundComponent}
 ];
