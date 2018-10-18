@@ -1,0 +1,26 @@
+.outer{
+    min-height:100vh;
+    height:auto;
+    background-image: url('../../assets/images/lfj04.jpg');
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 200px;
+}
+.inner{
+    min-height:50vh;
+    height:auto;
+    background-color: rgba(0, 0, 0, 0.2); 
+    padding: 30px;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.5);
+-moz-box-shadow:    4px 4px 10px 0px rgba(50, 50, 50, 0.5);
+box-shadow:         4px 4px 10px 0px rgba(50, 50, 50, 0.5);
+}
+button{
+    margin: 0 auto;
+}
+mat-spinner{
+    margin:0 auto;
+}
