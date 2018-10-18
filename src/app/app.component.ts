@@ -12,4 +12,5 @@ export class AppComponent {
     // Alternatively, you can scroll to top by using this other call:
     window.scrollTo(0, 0)
   }
+  url = window.location.pathname;
 }

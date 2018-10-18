@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
@@ -10,6 +11,10 @@ import {MatCardModule} from '@angular/material/card';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatIconModule} from '@angular/material/icon';
 
 
 import { AppComponent } from './app.component';
@@ -32,6 +37,13 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { OracleContentComponent } from './oracle-content/oracle-content.component';
 import { SapContentComponent } from './sap-content/sap-content.component';
 import { WorkdayContentComponent } from './workday-content/workday-content.component';
+import { LfjHomeComponent } from './lfj-home/lfj-home.component';
+import { LfjLoginComponent } from './lfj-login/lfj-login.component';
+import { LfjProfileComponent } from './lfj-profile/lfj-profile.component';
+import { LfjSkillsComponent } from './lfj-skills/lfj-skills.component';
+import { LfjSignupComponent } from './lfj-signup/lfj-signup.component';
+import { LfjOverviewComponent } from './lfj-overview/lfj-overview.component';
+import { LfjNavComponent } from './lfj-nav/lfj-nav.component';
 
 
 @NgModule({
@@ -54,7 +66,14 @@ import { WorkdayContentComponent } from './workday-content/workday-content.compo
     PagenotfoundComponent,
     OracleContentComponent,
     SapContentComponent,
-    WorkdayContentComponent
+    WorkdayContentComponent,
+    LfjHomeComponent,
+    LfjLoginComponent,
+    LfjProfileComponent,
+    LfjSkillsComponent,
+    LfjSignupComponent,
+    LfjOverviewComponent,
+    LfjNavComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +87,13 @@ import { WorkdayContentComponent } from './workday-content/workday-content.compo
     MatCheckboxModule,
     MatTabsModule,
     MatExpansionModule,
-    AppRoutingModule
+    MatProgressSpinnerModule,
+    MatChipsModule,
+    MatSnackBarModule,
+    MatIconModule,
+    HttpModule,
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,51 +1,34 @@
 #home1{
-    background-image: url('../../assets/images/banner-4.jpg');
+    background-image: url('../../assets/images/banner.jpg');
    
 }
-.bg-section
+#home1 .bg-section
 {
     padding-top: 150px;
     padding-bottom: 100px;
-    color:#36D379;
+    color:#9BE41D;
     font-weight: 900;
     font-family: Magettas;
 }
-.bg-section i
+#home1 .bg-section i
 {
-    font-size: 65px;
-    padding-top: 30px;
+    font-size: 70px;
+    padding-top: 44px;
 }
 .f1 
 {
-    font-size: 60px;
-    border: 2px solid rgb(39, 38, 38);    
+    font-size: 50px;
+    border: 5px solid rgb(77, 76, 76);    
     border-radius: 15px;
-}
-
-#home2{
-    background-image: url('../../assets/images/banner-2.png');
-} 
-#home3{
-    background-image: url('../../assets/images/banner-3.png');
-}
-.bg-section3
-{
-    font-size: 34px;
-    color:#E1DF34;
-    font-weight: 900;
-    font-family: Magettas dEMO;
-}
-.bg-section3 i
-{
-    font-size: 65px;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
 }
 .txt{
     padding: 0px;
     margin: 0px;
 }
-#home4{
-background-image: url('../../assets/images/banner-1.jpg');
-}
+
 #oracle{
     background-color: rgb(15, 18, 202);
     background-image: url('../../assets/images/oracle-bg.jpg');
@@ -63,13 +46,13 @@ background-image: url('../../assets/images/banner-1.jpg');
 }
 #about{
     background-color: black;
-    background-image: url('../../assets/images/contact-about-bg.jpg');
+    background-image: url('../../assets/images/about-bg.jpg');
     padding-top: 150px;
     padding-bottom: 100px;
 }
 #contact{
     background-color: black;
-    background-image: url('../../assets/images/contact-about-bg.jpg');
+    background-image: url('../../assets/images/contact-bg.jpg');
     padding-top: 150px;
     padding-bottom: 100px;
 }
@@ -88,10 +71,12 @@ background-image: url('../../assets/images/banner-1.jpg');
     .f1{
         font-size: 55px;
     }
-    .bg-section i{
-        font-size: 50px;
-        padding-top: 40px;
-    }
+    #home1 .bg-section i
+        {
+            font-size: 70px;
+            padding-top: 51px;
+          
+        }
 } 
 @media only screen and (max-width: 768px) {
     .f1{

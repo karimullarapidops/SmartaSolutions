@@ -8,117 +8,109 @@
   <h3>
       You may contact us at (+1) 603 275 0067 or
       fill out the form and one of our representatvies will reach out to you shortly.
-      
   </h3>
-
-
-
       </div>
       <mat-card class="col-md-7 col-12 form">
-        <form action="">
+        <form #loginForm="ngForm" autocomplete="off">
           <div class="row">
-
           <mat-form-field class="example-full-width col-md-6 col-12">
-            <input matInput ngModel name="firstname" placeholder="First Name" required>
+            <input matInput ngModel [(ngModel)]='formData.firstName' name="firstName" placeholder="First Name" required>
             <mat-error>
-              This field is required
+              Please enter the <strong>First Name</strong>
             </mat-error>
           </mat-form-field>
 
           <mat-form-field class="example-full-width col-md-6 col-12">
-              <input matInput ngModel name="lastname" placeholder="Last Name" required>
+              <input matInput ngModel [(ngModel)]='formData.lastName' name="lastName" placeholder="Last Name" required>
               <mat-error>
-                This field is required
+                Please enter the <strong>Last Name</strong> 
               </mat-error>
             </mat-form-field>
 
             <mat-form-field class="example-full-width col-12">
-                <input matInput ngModel name="company" placeholder="Company Name" required>
+                <input matInput ngModel [(ngModel)]='formData.companyName'  name="company" placeholder="Company Name" required>
                 <mat-error>
-                  This field is required
+                  Please enter the <strong>Company Name</strong> 
                 </mat-error>
               </mat-form-field>
 
               <mat-form-field class="example-full-width col-12">
-                  <input ngModel name="jobtitle" matInput placeholder="Job Title" required>
+                  <input ngModel [(ngModel)]='formData.jobTitle' name="jobTitle" matInput placeholder="Job Title" required>
                   <mat-error>
-                    This field is required
+                    Please enter the <strong>Job Title</strong> 
                   </mat-error>
                 </mat-form-field>
 
                 <mat-form-field class="example-full-width col-12">
-                    <mat-select ngModel name="industry" placeholder="Select Industry" required>
+                    <mat-select ngModel [(ngModel)]='formData.industry' name="industry" placeholder="Select Industry" required>
                       <mat-option *ngFor="let x of industries" [value]="x.value">
                         {{ x.viewValue }}
                       </mat-option>
                     </mat-select>
                     <mat-error>
-                      This field is required
+                      Please select the <strong>Industry</strong> 
                     </mat-error>
                 </mat-form-field>
 
                 <mat-form-field class="example-full-width col-md-4 col-12">
-                  <input matInput ngModel name="city" placeholder="City" required>
+                  <input matInput ngModel [(ngModel)]='formData.address.city' name="city" placeholder="City" required>
                   <mat-error>
-                    This field is required
+                    Please enter the <strong>City</strong> 
                   </mat-error>
                 </mat-form-field>
       
                 <mat-form-field class="example-full-width col-md-4 col-12">
-                   <input matInput ngModel name="state" placeholder="State/Region" required>
+                   <input matInput ngModel [(ngModel)]='formData.address.state' name="state" placeholder="State/Region" required>
                    <mat-error>
-                    This field is required
+                    Please enter the <strong>State/Region</strong> 
                   </mat-error>
                 </mat-form-field>
       
                 <mat-form-field class="example-full-width col-md-4 col-12">
-                  <input matInput ngModel name="country" placeholder="Country" required>
+                  <input matInput ngModel [(ngModel)]='formData.address.country' name="country" placeholder="Country" required>
                   <mat-error>
-                    This field is required
+                    Please enter the <strong>Country</strong> 
                   </mat-error>
                 </mat-form-field>
 
                 <mat-form-field class="example-full-width col-12">
-                    <input matInput ngModel name="email" placeholder="Email" [formControl]="emailFormControl" required>
-                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-                      Please enter a valid email address
-                    </mat-error>
-                    <mat-error *ngIf="emailFormControl.hasError('required')">
-                      Email is <strong>required</strong>
+                    <input type="email" matInput ngModel [(ngModel)]='formData.email' name="email" placeholder="Email" required>
+                    <mat-error>
+                      Please enter a valid  <strong>Email address</strong>
                     </mat-error>
                 </mat-form-field>
 
                 <mat-form-field class="example-full-width col-12">
-                    <input matInput ngModel name="phone" placeholder="Phone Number" [formControl]="phoneFormControl" required>
-                    <mat-error *ngIf="!phoneFormControl.hasError('required')">
-                      Please enter a valid Phone Number
-                    </mat-error>
-                    <mat-error *ngIf="phoneFormControl.hasError('required')">
-                      Phone Number is <strong>required</strong>
+                    <input matInput ngModel [(ngModel)]='formData.phoneNumber' name="phone" placeholder="Phone Number" required>
+                    <mat-error>
+                      Please enter a valid <strong>Phone Number</strong> 
                     </mat-error>
                 </mat-form-field>
 
                 <div class="example-full-width col-12">
                   <mat-card-content>
                     <h2>Which service(s) would you like to learn more about?</h2>
-                    <mat-checkbox color="primary" class="col-12">Oracle HCM</mat-checkbox><br>
-                    <mat-checkbox color="primary" class="col-12">SAP SuccessFactors</mat-checkbox><br>
-                    <mat-checkbox color="primary" class="col-12">WorkDay HCM</mat-checkbox><br>
-                    <mat-checkbox color="primary" class="col-12">Other</mat-checkbox>
+                    <mat-checkbox name="oracle" [(ngModel)]='formData.services.oracle' color="primary" class="col-12">Oracle HCM</mat-checkbox><br>
+                    <mat-checkbox name="sap" [(ngModel)]='formData.services.sap' color="primary" class="col-12">SAP SuccessFactors</mat-checkbox><br>
+                    <mat-checkbox name="workday" [(ngModel)]='formData.services.workday' color="primary" class="col-12">WorkDay HCM</mat-checkbox><br>
+                    <mat-checkbox name="other" [(ngModel)]='formData.services.other' color="primary" class="col-12">Other</mat-checkbox>
                   </mat-card-content>
                 </div>
 
                 <mat-form-field class="example-full-width col-12">
-                    <textarea matInput ngModel name="time" rows="4" placeholder="When is the best time for us to reach you?" required></textarea>
+                    <textarea matInput ngModel [(ngModel)]='formData.bestTime' name="time" rows="4" placeholder="When is the best time for us to reach you?" required></textarea>
                     <mat-error>
-                      This field is required
+                      Please enter the <strong>Best Time to contact you.</strong> 
                     </mat-error>
                   </mat-form-field>
 
-                <button class="example-full-width" color="primary" mat-raised-button>Submit</button>
+                <button type="submit"  [disabled]="loginForm.form.invalid" (click)='onSubmit(); loginForm.reset();' *ngIf='submit' class="example-full-width" color="primary" mat-raised-button>Submit</button>
+                <mat-spinner [diameter]="40" *ngIf='spin'></mat-spinner>
 
-          </div>
+        
+              </div>
         </form>
+
       </mat-card>
     </div>
   </div>
